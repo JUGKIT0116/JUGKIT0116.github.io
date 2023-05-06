@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猜数游戏</title>
+    <style>
+        h2 {font-family: Helvetica, Geneva, Arial,SunSans-Regular, sans-serif
+           color: green;
+        }
+        h1 {
+            color: pink;
+        }
+    </style>
+    <script>
+        var target=parseInt(Math.random()*100);
+        var count=10;
+        var flag=false;
+        function run() {
+            if(flag) {
+                var guess=document.getElementById("guess").value;
+                var result=document.getElementById("feedback");
+                var nn=document.getElementById("count");
+                if(guess>target){
+                    result.value="猜的有点大!";
+                }else if(guess<target){
+                    result.value="猜的有点小!";
+                }else if(guess==target){
+                    result.value="猜对啦！答案是"+guess;
+                    flag=false;
+                }
+                count=count-1;
+                nn.value=count;
+            }
+        }
+        function Is() {
+            flag=true;
+        }
+    </script>
+</head>
+<body align="center"
+      background="img/SpongeBob.jpg"
+      style="background-attachment:fixed;
+               background-size:100% 100%; ">
+    <h2>猜数游戏</h2>
+    <strong>请输入一个0-100之间的随机整数:</strong>
+    <br/>
+    <br/>
+    <form>
+        <input type="text" id="guess"/>
+        <input type="button" id="button" value="提交" onclick="run()"/>
+        <input type="button" value="开始" onclick="Is()"/><br/>
+        <label>结果:<input type="text" id="feedback"/></label><br/>
+        <label>当前还可以猜测的次数:<input type="text" value="10" id="count"/></label>
+    </form>
+</body>
+</html>
