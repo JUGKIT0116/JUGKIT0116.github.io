@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To My Island!</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+      /*导航栏样式 */
+        .scrollspy-example-2 {
+          position: relative;
+          height: 350px;
+          overflow: auto;
+        }
+
+        :root {
+            --w: 400px;
+            --h: 500px;
+        }
+        body {
+            margin: 0;
+
+
+            background-color: black;
+        }
+
+        #book {
+            height: var(--h);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 1s;
+            perspective: 1600px;
+            transform-style: preserve-3d;
+        }
+        .book-cover {
+            /* 封面比页面每条边宽25px */
+            height: calc(var(--h) + 20px);
+            width: calc(var(--w) + 20px);
+            position: absolute;
+            background-image: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            transition: 1s;
+            transform-origin: left;
+            backface-visibility: visible;
+            border: .5px solid black;
+        }
+        .book-page {
+            height: var(--h);
+            width: var(--w);
+            position: absolute;
+            left:-210px;
+            z-index: 100;
+            transition: 1s;
+            /* 封面比页面每条边宽的长度 */
+            transform-origin: 0px;
+            background-size: cover;
+            backface-visibility: visible;
+            border-radius:20px;
+        }
+
+        .book{
+          margin: 0;
+          display: flex;
+          height: 100vh;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+
+        #control {
+            margin-top: 60px;
+            user-select: none;
+        }
+        #control button {
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            border: 0;
+            margin: 0px 15px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 50%;
+            background-color: rgba(63,63,63,.8);
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg " style="background-color: #FFC0CB;">
+<div class="container-fluid">
+<a class="navbar-brand" href="#">JugKit</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+<div class="navbar-nav">
+  <a class="nav-link active" aria-current="page" href="Welcome.html">Home</a>
+  <a class="nav-link" href="Part.html">Collection</a>
+  <a class="nav-link" href="Memoirs.html">Memoirs</a>
+</div>
+</div>
+</div>
+</nav>
+
+<div class="book">
+
+    <div id="book">
+        <div class="book-cover one-page"></div>
+
+        <div class="book-page one-page"> <img src="img/page1.png"   ></div>
+        <div class="book-page one-page"> <img src="img/page2.png"   ></div>
+        <div class="book-page one-page"> <img src="img/page3.png"   ></div>
+        <div class="book-page one-page"> <img src="img/page4.png"   ></div>
+        <div class="book-page one-page"> <img src="img/page5.png"   ></div>
+        <div class="book-page one-page"> <img src="img/page6.png"   ></div>
+        <div class="book-page one-page"> <img src="img/page7.png"   ></div>
+        <div class="book-page one-page"> <img src="img/page8.jpg"   ></div>
+        <div class="book-cover one-page"></div>
+    </div>
+    <div id="control">
+        <button>&lt;</button>
+        <button>&gt;</button>
+    </div>
+</div>
+    <script>
+        // 总页数
+        const PAGECOUNT = 10
+        // 当前页面编号
+        let pageNo = 0
+
+        // 内容页
+        let pages = document.querySelectorAll('.book-page')
+        // 封面页
+        let cover = document.querySelectorAll('.book-cover')
+        // 按钮
+        let btn = document.querySelectorAll('#control button')
+        //
+        let book = document.querySelector('#book')
+        // 所有页
+        let allPages = document.querySelectorAll('.one-page')
+
+        function init() {
+            // 初始化内容页的图片
+            for (let index = 0; index < pages.length; index++) {
+                pages[index].style.backgroundImage = "url('" + [index+1] + ".jpg')"
+                pages[index].style.zIndex = PAGECOUNT - index - 1
+            }
+            cover[0].style.zIndex = PAGECOUNT
+            cover[1].style.zIndex = 1
+
+            // 默认页面为封面，左按钮无效
+            btn[0].style.backgroundColor = "rgba(110, 110, 110, 0.5)"
+            btn[0].style.color = "darkgray"
+            btn[0].disabled = true
+
+            // 左翻页
+            btn[0].onclick = function() {
+                pageNo --
+                // 如果当前是最后一页，并往前翻
+                if ((PAGECOUNT - 1) == pageNo) {
+                    allPages[pageNo].style.transform = 'rotateY(0deg)'
+                    //( 240px + 50px ) * 0.5
+                    book.style.transform = 'translateX(145px)'
+                    btn[1].style.backgroundColor = "rgba(63, 63, 63, 0.8)"
+                    btn[1].style.color = "white"
+                    btn[1].disabled = false
+                }
+                else {
+                    allPages[pageNo].style.transform = 'rotateY(0deg)'
+                }
+                allPages[pageNo].style.zIndex = PAGECOUNT - pageNo
+
+                if( 0 == pageNo ) {
+                    btn[0].style.backgroundColor = "rgba(110, 110, 110, 0.5)"
+                    btn[0].style.color = "darkgray"
+                    btn[0].disabled = true
+                    book.style.transform = 'translateX(0px)'
+                }
+            }
+
+            // 右翻页
+            btn[1].onclick = function() {
+                // 如果当前是第一页，并往后翻
+                if ( 0 == pageNo ) {
+                    allPages[pageNo].style.transform = 'rotateY(-180deg)'
+                    //( 240px + 50px ) * 0.5
+                    book.style.transform = 'translateX(145px)'
+                    btn[0].style.backgroundColor = "rgba(63, 63, 63, 0.8)"
+                    btn[0].style.color = "white"
+                    btn[0].disabled = false
+                }
+                else {
+                    allPages[pageNo].style.transform = 'rotateY(-180deg)'
+                }
+
+                allPages[pageNo].style.zIndex = 1000 + pageNo
+                pageNo ++
+
+                if( PAGECOUNT == pageNo ) {
+                    btn[1].style.backgroundColor = "rgba(110, 110, 110, 0.5)"
+                    btn[1].style.color = "darkgray"
+                    btn[1].disabled = true
+                    book.style.transform = 'translateX(300px)'
+                }
+            }
+        }
+        init()
+    </script>
+</body>
+</html>

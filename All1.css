@@ -1,0 +1,1048 @@
+
+      /*导航栏样式 */
+        .scrollspy-example-2 {
+          position: relative;
+          height: 350px;
+          overflow: auto;
+        }
+        
+
+      /*鼠标悬停放大 */
+        #div1 img{
+          cursor: pointer;
+          transition: all 0.2s;
+        }
+        #div1 img:hover{
+          transform: scale(1.1);
+        }
+
+      /*弹窗样式 */
+        body{
+          margin: 0px;
+        }
+        #header{
+          height: 40px;
+        }
+        #header-right{
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          border-radius: 5px;
+          background:#FFC0CB;
+          color: #000;
+          right: 0px;
+          top: 0px;
+          text-align: center;
+        }
+
+        /*ZYJ*/
+        .zhezhaoZYJ{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangZYJ{
+          position: relative;
+          z-index:9999;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+        }
+
+
+        /*SJ*/
+        .zhezhaoSJ{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangSJ{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*LYC*/
+        .zhezhaoLYC{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangLYC{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+
+        /*XL*/
+        .zhezhaoXL{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangXL{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*YYN*/
+        .zhezhaoYYN{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangYYN{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*ZMM*/
+        .zhezhaoZMM{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangZMM{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*WZ*/
+        .zhezhaoWZ{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangWZ{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*ZYR*/
+        .zhezhaoZYR{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangZYR{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+
+        /*TYR*/
+        .zhezhaoTYR{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangTYR{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*ZMY*/
+        .zhezhaoZMY{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangZMY{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*HZY*/
+        .zhezhaoHZY{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangHZY{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*ZZY*/
+        .zhezhaoZZY{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangZZY{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*YSY*/
+        .zhezhaoYSY{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangYSY{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*HXY*/
+        .zhezhaoHXY{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangHXY{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*LJQ*/
+        .zhezhaoLJQ{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangLJQ{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*PSQ*/
+        .zhezhaoPSQ{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangPSQ{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*SHR*/
+        .zhezhaoSHR{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangSHR{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*YYM*/
+        .zhezhaoYYM{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangYYM{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*WJY*/
+        .zhezhaoWJY{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangWJY{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*YJ*/
+        .zhezhaoYJ{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangYJ{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*HPY*/
+        .zhezhaoHPY{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangHPY{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*LYX*/
+        .zhezhaoLYX{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangLYX{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+
+        /*WLR*/
+        .zhezhaoWLR{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangWLR{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*QXY*/
+        .zhezhaoQXY{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangQXY{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*TK*/
+        .zhezhaoTK{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangTK{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*QLY*/
+        .zhezhaoQLY{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangQLY{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*LJY*/
+        .zhezhaoLJY{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangLJY{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*CXR*/
+        .zhezhaoCXR{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangCXR{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*BQL*/
+        .zhezhaoBQL{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangBQL{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*TT*/
+        .zhezhaoTT{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangTT{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*MYY*/
+        .zhezhaoMYY{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangMYY{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*ZXY*/
+        .zhezhaoZXY{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangZXY{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*LWX*/
+        .zhezhaoLWX{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangLWX{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*XCN*/
+        .zhezhaoXCN{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangXCN{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*LWJ*/
+        .zhezhaoLWJ{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangLWJ{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*LWN*/
+        .zhezhaoLWN{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangLWN{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*WYT*/
+        .zhezhaoWYT{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangWYT{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*XJW*/
+        .zhezhaoXJW{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangXJW{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*MYL*/
+        .zhezhaoMYL{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangMYL{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*MXY*/
+        .zhezhaoMXY{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangMXY{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*PSY*/
+        .zhezhaoPSY{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangPSY{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*ZYN*/
+        .zhezhaoZYN{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangZYN{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*LJX*/
+        .zhezhaoLJX{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangLJX{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*ZYT*/
+        .zhezhaoZYT{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangZYT{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*YXY*/
+        .zhezhaoYXY{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangYXY{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*CYQ*/
+        .zhezhaoCYQ{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangCYQ{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*GYX*/
+        .zhezhaoGYX{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangGYX{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }
+
+        /*YWWY*/
+        .zhezhaoYWWY{
+          position:absolute;
+          z-index:9999;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuangYWWY{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+          z-index:9999;
+        }

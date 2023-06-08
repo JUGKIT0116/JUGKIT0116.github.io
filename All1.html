@@ -1,0 +1,985 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome To My Island!</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="All1.css">
+    <style type="text/css">
+
+      /*导航栏样式 */
+        .scrollspy-example-2 {
+          position: relative;
+          height: 350px;
+          overflow: auto;
+        }
+
+      /*鼠标悬停放大 */
+        #div1 img{
+          cursor: pointer;
+          transition: all 0.2s;
+        }
+        #div1 img:hover{
+          transform: scale(1.1);
+        }
+
+      /*弹窗样式 */
+        body{
+          margin: 0px;
+        }
+        .zhezhao{
+          position:absolute;
+          left:27.5%;
+          top:0;
+          bottom:0;
+          width: 50%;
+          height: 50%;
+        }
+        .tankuang{
+          position: relative;
+          left:50%
+          background:	#F8F8FF;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          margin: 30% auto;
+        }
+        #header{
+          height: 40px;
+        }
+        #header-right{
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          border-radius: 5px;
+          background:#FFC0CB;
+          color: #000;
+          right: 0px;
+          top: 0px;
+          text-align: center;
+        }
+
+        #img{       margin: 0;
+                    display: flex;
+                    height: 100vh;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;}
+
+      </style>
+        </head>
+  <body style="background-color:black;">
+
+    <!--导航栏-->
+            <nav class="navbar navbar-expand-lg " style="background-color: #FFC0CB;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">JugKit</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="Welcome.html">Home</a>
+            <a class="nav-link" href="Part.html">Collection</a>
+            <a class="nav-link" href="Memoirs.html">Memoirs</a>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+<div id="img">
+    <!--TK-->
+       <div id="div1">
+        <a type="button" onclick="dianwoTK()">
+         <img src="img/TK.PNG" width="210"
+               style="position: absolute;
+                    top: 55px;
+                    left: 1020px;">
+         </a>
+       </div>
+         <div class="zhezhaoTK" id='zhezhaoTK'>
+           <div class="tankuang">
+             <div id="header">
+               <span><img src="img/IDTK.PNG" width="705px" ></span>
+               <div id="header-right" onclick="hidderTK()">x</div>
+             </div>
+           </div>
+         </div>
+
+         <!--BQL-->
+            <div id="div1">
+             <a type="button" onclick="dianwoBQL()">
+              <img src="img/BQL.PNG" width="190"
+                    style="position: absolute;
+                         top: 90px;
+                         left: 1220px;">
+              </a>
+            </div>
+              <div class="zhezhaoBQL" id='zhezhaoBQL'>
+                <div class="tankuang">
+                  <div id="header">
+                    <span><img src="img/IDBQL.PNG" width="705px" ></span>
+                    <div id="header-right" onclick="hidderBQL()">x</div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!--MYY-->
+                 <div id="div1">
+                  <a type="button" onclick="dianwoMYY()">
+                   <img src="img/MYY.PNG" width="220"
+                         style="position: absolute;
+                              top: 180px;
+                              left: 1270px;">
+                   </a>
+                 </div>
+                   <div class="zhezhaoMYY" id='zhezhaoMYY'>
+                     <div class="tankuang">
+                       <div id="header">
+                         <span><img src="img/IDMYY.PNG" width="705px" ></span>
+                         <div id="header-right" onclick="hidderMYY()">x</div>
+                       </div>
+                     </div>
+                   </div>
+
+                   <!--TT-->
+                      <div id="div1">
+                       <a type="button" onclick="dianwoTT()">
+                        <img src="img/TT.PNG" width="130"
+                              style="position: absolute;
+                                   top: 300px;
+                                   left: 1300px;">
+                        </a>
+                      </div>
+                        <div class="zhezhaoTT" id='zhezhaoTT'>
+                          <div class="tankuang">
+                            <div id="header">
+                              <span><img src="img/IDTT.PNG" width="705px" ></span>
+                              <div id="header-right" onclick="hidderTT()">x</div>
+                            </div>
+                          </div>
+                        </div>
+
+         <!--CXR-->
+            <div id="div1">
+             <a type="button" onclick="dianwoCXR()">
+              <img src="img/CXR.PNG" width="150"
+                    style="position: absolute;
+                         top: 135px;
+                         left: 1175px;">
+              </a>
+            </div>
+              <div class="zhezhaoCXR" id='zhezhaoCXR'>
+                <div class="tankuang">
+                  <div id="header">
+                    <span><img src="img/IDCXR.PNG" width="705px" ></span>
+                    <div id="header-right" onclick="hidderCXR()">x</div>
+                  </div>
+                </div>
+              </div>
+
+            <!--HZY-->
+               <div id="div1">
+                <a type="button" onclick="dianwoHZY()">
+                 <img src="img/HZY.PNG" width="170"
+                       style="position: absolute;
+                            top: 55px;
+                            left: 700px;">
+                 </a>
+               </div>
+                 <div class="zhezhaoHZY" id='zhezhaoHZY'>
+                   <div class="tankuang">
+                     <div id="header">
+                       <span><img src="img/IDHZY.PNG" width="705px" ></span>
+                       <div id="header-right" onclick="hidderHZY()">x</div>
+                     </div>
+                   </div>
+                 </div>
+
+            <!--LYC-->
+               <div id="div1">
+                <a type="button" onclick="dianwoLYC()">
+                 <img src="img/LYC.PNG" width="180"
+                       style="position: absolute;
+                            top: 70px;
+                            left: 575px;">
+                 </a>
+               </div>
+                 <div class="zhezhaoLYC" id='zhezhaoLYC'>
+                   <div class="tankuang">
+                     <div id="header">
+                       <span><img src="img/IDLYC.PNG" width="705px" ></span>
+                       <div id="header-right" onclick="hidderLYC()">x</div>
+                     </div>
+                   </div>
+                 </div>
+
+                 <!--LWX-->
+                    <div id="div1">
+                     <a type="button" onclick="dianwoLWX()">
+                       <img src="img/LWX.PNG" width="170"
+                            style="position: absolute;
+                                 top: 90px;
+                                 left: 405px;
+                                 ">
+                      </a>
+                    </div>
+                      <div class="zhezhaoLWX" id='zhezhaoLWX'>
+                        <div class="tankuang">
+                          <div id="header">
+                            <span><img src="img/IDLWX.PNG" width="705px" style="z-index:9999"></span>
+                            <div id="header-right" onclick="hidderLWX()">x</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--MXY-->
+                         <div id="div1">
+                          <a type="button" onclick="dianwoMXY()">
+                           <img src="img/MXY.PNG" width="170"
+                                 style="position: absolute;
+                                      top: 80px;
+                                      left: 200px;
+                                      ">
+                           </a>
+                         </div>
+                           <div class="zhezhaoMXY" id='zhezhaoMXY'>
+                             <div class="tankuang">
+                               <div id="header">
+                                 <span><img src="img/IDMXY.PNG" width="705px" style="z-index:9999"></span>
+                                 <div id="header-right" onclick="hidderMXY()">x</div>
+                               </div>
+                             </div>
+                           </div>
+
+                           <!--PSY-->
+                              <div id="div1">
+                               <a type="button" onclick="dianwoPSY()">
+                                 <img src="img/PSY.PNG" width="180"
+                                      style="position: absolute;
+                                           top: 100px;
+                                           left: 120px;
+                                           ">
+                                </a>
+                              </div>
+                                <div class="zhezhaoPSY" id='zhezhaoPSY'>
+                                  <div class="tankuang">
+                                    <div id="header">
+                                      <span><img src="img/IDPSY.PNG" width="705px" style="z-index:9999"></span>
+                                      <div id="header-right" onclick="hidderPSY()">x</div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                      <!--XCN-->
+                         <div id="div1">
+                          <a type="button" onclick="dianwoXCN()">
+                           <img src="img/XCN.PNG" width="190"
+                                 style="position: absolute;
+                                      top: 80px;
+                                      left: 310px;
+                                      ">
+                           </a>
+                         </div>
+                           <div class="zhezhaoXCN" id='zhezhaoXCN'>
+                             <div class="tankuang">
+                               <div id="header">
+                                 <span><img src="img/IDXCN.PNG" width="705px" style="z-index:9999"></span>
+                                 <div id="header-right" onclick="hidderXCN()">x</div>
+                               </div>
+                             </div>
+                           </div>
+
+            <!--SJ-->
+               <div id="div1">
+                <a type="button" onclick="dianwoSJ()">
+                 <img src="img/SJ.PNG" width="180"
+                       style="position: absolute;
+                            top: 140px;
+                            left: 515px;
+                            ">
+                 </a>
+               </div>
+                 <div class="zhezhaoSJ" id='zhezhaoSJ'>
+                   <div class="tankuang">
+                     <div id="header">
+                       <span><img src="img/IDSJ.PNG" width="705px" style="z-index:9999"></span>
+                       <div id="header-right" onclick="hidderSJ()">x</div>
+                     </div>
+                   </div>
+                 </div>
+
+                 <!--LWN-->
+                    <div id="div1">
+                     <a type="button" onclick="dianwoLWN()">
+                      <img src="img/LWN.PNG" width="170"
+                            style="position: absolute;
+                                 top: 170px;
+                                 left: 340px;
+                                 ">
+                      </a>
+                    </div>
+                      <div class="zhezhaoLWN" id='zhezhaoLWN'>
+                        <div class="tankuang">
+                          <div id="header">
+                            <span><img src="img/IDLWN.PNG" width="705px" style="z-index:9999"></span>
+                            <div id="header-right" onclick="hidderLWN()">x</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--ZYN-->
+                         <div id="div1">
+                          <a type="button" onclick="dianwoZYN()">
+                            <img src="img/ZYN.PNG" width="160"
+                                 style="position: absolute;
+                                      top: 180px;
+                                      left: 220px;
+                                      ">
+                           </a>
+                         </div>
+                           <div class="zhezhaoZYN" id='zhezhaoZYN'>
+                             <div class="tankuang">
+                               <div id="header">
+                                 <span><img src="img/IDZYN.PNG" width="705px" style="z-index:9999"></span>
+                                 <div id="header-right" onclick="hidderZYN()">x</div>
+                               </div>
+                             </div>
+                           </div>
+
+                           <!--LJX-->
+                              <div id="div1">
+                               <a type="button" onclick="dianwoLJX()">
+                                 <img src="img/LJX.PNG" width="150"
+                                      style="position: absolute;
+                                           top: 230px;
+                                           left: 100px;
+                                           ">
+                                </a>
+                              </div>
+                                <div class="zhezhaoLJX" id='zhezhaoLJX'>
+                                  <div class="tankuang">
+                                    <div id="header">
+                                      <span><img src="img/IDLJX.PNG" width="705px" style="z-index:9999"></span>
+                                      <div id="header-right" onclick="hidderLJX()">x</div>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+                 <!--LWJ-->
+                    <div id="div1">
+                     <a type="button" onclick="dianwoLWJ()">
+                      <img src="img/LWJ.PNG" width="195"
+                            style="position: absolute;
+                                 top: 225px;
+                                 left: 425px;
+                                 ">
+                      </a>
+                    </div>
+                      <div class="zhezhaoLWJ" id='zhezhaoLWJ'>
+                        <div class="tankuang">
+                          <div id="header">
+                            <span><img src="img/IDLWJ.PNG" width="705px" style="z-index:9999"></span>
+                            <div id="header-right" onclick="hidderLWJ()">x</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--WYT-->
+                         <div id="div1">
+                          <a type="button" onclick="dianwoWYT()">
+                           <img src="img/WYT.PNG" width="180"
+                                 style="position: absolute;
+                                      top: 300px;
+                                      left: 330px;
+                                      ">
+                           </a>
+                         </div>
+                           <div class="zhezhaoWYT" id='zhezhaoWYT'>
+                             <div class="tankuang">
+                               <div id="header">
+                                 <span><img src="img/IDWYT.PNG" width="705px" style="z-index:9999"></span>
+                                 <div id="header-right" onclick="hidderWYT()">x</div>
+                               </div>
+                             </div>
+                           </div>
+
+                           <!--ZYT-->
+                              <div id="div1">
+                               <a type="button" onclick="dianwoZYT()">
+                                 <img src="img/ZYT.PNG" width="140"
+                                      style="position: absolute;
+                                           top: 270px;
+                                           left: 220px;
+                                           ">
+                                </a>
+                              </div>
+                                <div class="zhezhaoZYT" id='zhezhaoZYT'>
+                                  <div class="tankuang">
+                                    <div id="header">
+                                      <span><img src="img/IDZYT.PNG" width="705px" style="z-index:9999"></span>
+                                      <div id="header-right" onclick="hidderZYT()">x</div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <!--YXY-->
+                                   <div id="div1">
+                                    <a type="button" onclick="dianwoYXY()">
+                                      <img src="img/YXY.PNG" width="190"
+                                           style="position: absolute;
+                                                top: 330px;
+                                                left: 60px;
+                                                ">
+                                     </a>
+                                   </div>
+                                     <div class="zhezhaoYXY" id='zhezhaoYXY'>
+                                       <div class="tankuang">
+                                         <div id="header">
+                                           <span><img src="img/IDYXY.PNG" width="705px" style="z-index:9999"></span>
+                                           <div id="header-right" onclick="hidderYXY()">x</div>
+                                         </div>
+                                       </div>
+                                     </div>
+
+                                     <!--CYQ-->
+                                        <div id="div1">
+                                         <a type="button" onclick="dianwoCYQ()">
+                                           <img src="img/CYQ.PNG" width="120"
+                                                style="position: absolute;
+                                                     top: 310px;
+                                                     left: 190px;
+                                                     ">
+                                          </a>
+                                        </div>
+                                          <div class="zhezhaoCYQ" id='zhezhaoCYQ'>
+                                            <div class="tankuang">
+                                              <div id="header">
+                                                <span><img src="img/IDCYQ.PNG" width="705px" style="z-index:9999"></span>
+                                                <div id="header-right" onclick="hidderCYQ()">x</div>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <!--GYX-->
+                                             <div id="div1">
+                                              <a type="button" onclick="dianwoGYX()">
+                                                <img src="img/GYX.PNG" width="250"
+                                                     style="position: absolute;
+                                                          top: 350px;
+                                                          left: 170px;
+                                                          ">
+                                               </a>
+                                             </div>
+                                               <div class="zhezhaoGYX" id='zhezhaoGYX'>
+                                                 <div class="tankuang">
+                                                   <div id="header">
+                                                     <span><img src="img/IDGYX.PNG" width="705px" style="z-index:9999"></span>
+                                                     <div id="header-right" onclick="hidderGYX()">x</div>
+                                                   </div>
+                                                 </div>
+                                               </div>
+
+                                           <!--YWWY-->
+                                              <div id="div1">
+                                               <a type="button" onclick="dianwoYWWY()">
+                                                 <img src="img/YWWY.PNG" width="190"
+                                                      style="position: absolute;
+                                                           top: 390px;
+                                                           left: 90px;
+                                                           ">
+                                                </a>
+                                              </div>
+                                                <div class="zhezhaoYWWY" id='zhezhaoYWWY'>
+                                                  <div class="tankuang">
+                                                    <div id="header">
+                                                      <span><img src="img/IDYWWY.PNG" width="705px" style="z-index:9999"></span>
+                                                      <div id="header-right" onclick="hidderYWWY()">x</div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                           <!--XJW-->
+                              <div id="div1">
+                               <a type="button" onclick="dianwoXJW()">
+                                <img src="img/XJW.PNG" width="160"
+                                      style="position: absolute;
+                                           top: 390px;
+                                           left: 370px;
+                                           ">
+                                </a>
+                              </div>
+                                <div class="zhezhaoXJW" id='zhezhaoXJW'>
+                                  <div class="tankuang">
+                                    <div id="header">
+                                      <span><img src="img/IDXJW.PNG" width="705px" style="z-index:9999"></span>
+                                      <div id="header-right" onclick="hidderXJW()">x</div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <!--MYL-->
+                                   <div id="div1">
+                                    <a type="button" onclick="dianwoMYL()">
+                                     <img src="img/MYL.PNG" width="190"
+                                           style="position: absolute;
+                                                top: 460px;
+                                                left: 270px;
+                                                ">
+                                     </a>
+                                   </div>
+                                     <div class="zhezhaoMYL" id='zhezhaoMYL'>
+                                       <div class="tankuang">
+                                         <div id="header">
+                                           <span><img src="img/IDMYL.PNG" width="705px" style="z-index:9999"></span>
+                                           <div id="header-right" onclick="hidderMYL()">x</div>
+                                         </div>
+                                       </div>
+                                     </div>
+
+                      <!--PSQ-->
+                         <div id="div1">
+                          <a type="button" onclick="dianwoPSQ()">
+                            <img src="img/PSQ.PNG" width="150"
+                                 style="position: absolute;
+                                      top: 70px;
+                                      left: 852px;">
+                           </a>
+                         </div>
+                           <div class="zhezhaoPSQ" id='zhezhaoPSQ'>
+                             <div class="tankuang">
+                               <div id="header">
+                                 <span><img src="img/IDPSQ.PNG" width="705px" ></span>
+                                 <div id="header-right" onclick="hidderPSQ()">x</div>
+                               </div>
+                             </div>
+                           </div>
+
+                           <!--SHR-->
+                              <div id="div1">
+                               <a type="button" onclick="dianwoSHR()">
+                                 <img src="img/SHR.PNG" width="190"
+                                      style="position: absolute;
+                                           top: 105px;
+                                           left: 945px;">
+                                </a>
+                              </div>
+                                <div class="zhezhaoPSQ" id='zhezhaoSHR'>
+                                  <div class="tankuang">
+                                    <div id="header">
+                                      <span><img src="img/IDSHR.PNG" width="705px" ></span>
+                                      <div id="header-right" onclick="hidderSHR()">x</div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                           <!--XL-->
+                              <div id="div1">
+                               <a type="button" onclick="dianwoXL()">
+                                 <img src="img/XL.PNG" width="170"
+                                      style="position: absolute;
+                                           top: 160px;
+                                           left: 750px;">
+                                </a>
+                              </div>
+                                <div class="zhezhaoXL" id='zhezhaoXL'>
+                                  <div class="tankuang">
+                                    <div id="header">
+                                      <span><img src="img/IDXL.PNG" width="705px" ></span>
+                                      <div id="header-right" onclick="hidderXL()">x</div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                      <!--LJQ-->
+                         <div id="div1">
+                          <a type="button" onclick="dianwoLJQ()">
+                           <img src="img/LJQ.PNG" width="150"
+                                 style="position: absolute;
+                                      top: 155px;
+                                      left: 882px;">
+                           </a>
+                         </div>
+                           <div class="zhezhaoZZY" id='zhezhaoLJQ'>
+                             <div class="tankuang">
+                               <div id="header">
+                                 <span><img src="img/IDLJQ.PNG" width="705px" ></span>
+                                 <div id="header-right" onclick="hidderLJQ()">x</div>
+                               </div>
+                             </div>
+                           </div>
+
+                           <!--ZXY-->
+                              <div id="div1">
+                               <a type="button" onclick="dianwoZXY()">
+                                <img src="img/ZXY.PNG" width="130"
+                                      style="position: absolute;
+                                           top: 200px;
+                                           left: 1100px;">
+                                </a>
+                              </div>
+                                <div class="zhezhaoZXY" id='zhezhaoZXY'>
+                                  <div class="tankuang">
+                                    <div id="header">
+                                      <span><img src="img/IDZXY.PNG" width="705px" ></span>
+                                      <div id="header-right" onclick="hidderZXY()">x</div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                           <!--HPY-->
+                              <div id="div1">
+                               <a type="button" onclick="dianwoHPY()">
+                                <img src="img/HPY.PNG" width="140"
+                                      style="position: absolute;
+                                           top: 220px;
+                                           left: 1000px;">
+                                </a>
+                              </div>
+                                <div class="zhezhaoHPY" id='zhezhaoHPY'>
+                                  <div class="tankuang">
+                                    <div id="header">
+                                      <span><img src="img/IDHPY.PNG" width="705px" ></span>
+                                      <div id="header-right" onclick="hidderHPY()">x</div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <!--WLR-->
+                                   <div id="div1">
+                                    <a type="button" onclick="dianwoWLR()">
+                                      <img src="img/WLR.PNG" width="300"
+                                           style="position: absolute;
+                                                top: 290px;
+                                                left: 1005px;">
+                                     </a>
+                                   </div>
+                                     <div class="zhezhaoWLR" id='zhezhaoWLR'>
+                                       <div class="tankuang">
+                                         <div id="header">
+                                           <span><img src="img/IDWLR.PNG" width="705px" ></span>
+                                           <div id="header-right" onclick="hidderWLR()">x</div>
+                                         </div>
+                                       </div>
+                                     </div>
+
+                                     <!--LJY-->
+                                        <div id="div1">
+                                         <a type="button" onclick="dianwoLJY()">
+                                           <img src="img/LJY.PNG" width="160"
+                                                style="position: absolute;
+                                                     top: 260px;
+                                                     left: 1185px;">
+                                          </a>
+                                        </div>
+                                          <div class="zhezhaoLJY" id='zhezhaoLJY'>
+                                            <div class="tankuang">
+                                              <div id="header">
+                                                <span><img src="img/IDLJY.PNG" width="705px" ></span>
+                                                <div id="header-right" onclick="hidderLJY()">x</div>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                <!--LYX-->
+                                   <div id="div1">
+                                    <a type="button" onclick="dianwoLYX()">
+                                      <img src="img/LYX.PNG" width="140"
+                                           style="position: absolute;
+                                                top: 270px;
+                                                left: 950px;">
+                                     </a>
+                                   </div>
+                                     <div class="zhezhaoLYX" id='zhezhaoLYX'>
+                                       <div class="tankuang">
+                                         <div id="header">
+                                           <span><img src="img/IDLYX.PNG" width="705px" ></span>
+                                           <div id="header-right" onclick="hidderLYX()">x</div>
+                                         </div>
+                                       </div>
+                                     </div>
+
+                      <!--ZZY-->
+                         <div id="div1">
+                          <a type="button" onclick="dianwoZZY()">
+                           <img src="img/ZZY.PNG" width="230"
+                                 style="position: absolute;
+                                      top: 220px;
+                                      left: 780px;">
+                           </a>
+                         </div>
+                           <div class="zhezhaoZZY" id='zhezhaoZZY'>
+                             <div class="tankuang">
+                               <div id="header">
+                                 <span><img src="img/IDZZY.PNG" width="705px" ></span>
+                                 <div id="header-right" onclick="hidderZZY()">x</div>
+                               </div>
+                             </div>
+                           </div>
+
+                           <!--HXY-->
+                              <div id="div1">
+                               <a type="button" onclick="dianwoHXY()">
+                                 <img src="img/HXY.PNG" width="200"
+                                      style="position: absolute;
+                                           top: 340px;
+                                           left: 860px;">
+                                </a>
+                              </div>
+                                <div class="zhezhaoHXY" id='zhezhaoHXY'>
+                                  <div class="tankuang">
+                                    <div id="header">
+                                      <span><img src="img/IDHXY.PNG" width="705px" ></span>
+                                      <div id="header-right" onclick="hidderHXY()">x</div>
+                                    </div>
+                                  </div>
+                                </div>
+
+<!--ZYJ-->
+  <div id="div1">
+   <a type="button" onclick="dianwoZYJ()">
+     <img src="img/ZYJ2.PNG" width="370"
+          style="position: absolute;
+               top: 180px;
+               left: 550px;">
+    </a>
+  </div>
+    <div class="zhezhaoZYJ" id='zhezhaoZYJ'>
+      <div class="tankuang">
+        <div id="header">
+          <span><img src="img/IDZYJ.PNG" width="705px" ></span>
+          <div id="header-right" onclick="hidderZYJ()">x</div>
+        </div>
+      </div>
+    </div>
+
+    <!--YYN-->
+       <div id="div1">
+        <a type="button" onclick="dianwoYYN()">
+         <img src="img/YYN.PNG" width="160"
+               style="position: absolute;
+                    top: 335px;
+                    left: 460px;">
+         </a>
+       </div>
+         <div class="zhezhaoYYN" id='zhezhaoYYN'>
+           <div class="tankuang">
+             <div id="header">
+               <span><img src="img/IDYYN.PNG" width="705px" ></span>
+               <div id="header-right" onclick="hidderYYN()">x</div>
+             </div>
+           </div>
+         </div>
+
+         <!--QXY-->
+            <div id="div1">
+             <a type="button" onclick="dianwoQXY()">
+              <img src="img/QXY.PNG" width="130"
+                    style="position: absolute;
+                         top:350px;
+                         left: 1050px;">
+              </a>
+            </div>
+              <div class="zhezhaoQXY" id='zhezhaoQXY'>
+                <div class="tankuang">
+                  <div id="header">
+                    <span><img src="img/IDQXY.PNG" width="705px" ></span>
+                    <div id="header-right" onclick="hidderQXY()">x</div>
+                  </div>
+                </div>
+              </div>
+
+         <!--WJY-->
+            <div id="div1">
+             <a type="button" onclick="dianwoWJY()">
+              <img src="img/WJY.PNG" width="255"
+                    style="position: absolute;
+                         top:410px;
+                         left: 960px;">
+              </a>
+            </div>
+              <div class="zhezhaoWJY" id='zhezhaoWJY'>
+                <div class="tankuang">
+                  <div id="header">
+                    <span><img src="img/IDWJY.PNG" width="705px" ></span>
+                    <div id="header-right" onclick="hidderWJY()">x</div>
+                  </div>
+                </div>
+              </div>
+
+              <!--QLY-->
+                 <div id="div1">
+                  <a type="button" onclick="dianwoQLY()">
+                   <img src="img/QLY.PNG" width="180"
+                         style="position: absolute;
+                              top:400px;
+                              left: 1170px;">
+                   </a>
+                 </div>
+                   <div class="zhezhaoQLY" id='zhezhaoQLY'>
+                     <div class="tankuang">
+                       <div id="header">
+                         <span><img src="img/IDQLY.PNG" width="705px" ></span>
+                         <div id="header-right" onclick="hidderQLY()">x</div>
+                       </div>
+                     </div>
+                   </div>
+
+              <!--YJ-->
+                 <div id="div1">
+                  <a type="button" onclick="dianwoYJ()">
+                   <img src="img/YJ.PNG" width="210"
+                         style="position: absolute;
+                              top:410px;
+                              left: 1077px;">
+                   </a>
+                 </div>
+                   <div class="zhezhaoYJ" id='zhezhaoYJ'>
+                     <div class="tankuang">
+                       <div id="header">
+                         <span><img src="img/IDYJ.PNG" width="705px" ></span>
+                         <div id="header-right" onclick="hidderYJ()">x</div>
+                       </div>
+                     </div>
+                   </div>
+
+         <!--YYM-->
+            <div id="div1">
+             <a type="button" onclick="dianwoYYM()">
+              <img src="img/YYM.PNG" width="200"
+                    style="position: absolute;
+                         top:475px;
+                         left: 905px;">
+              </a>
+            </div>
+              <div class="zhezhaoYYM" id='zhezhaoYYM'>
+                <div class="tankuang">
+                  <div id="header">
+                    <span><img src="img/IDYYM.PNG" width="705px" ></span>
+                    <div id="header-right" onclick="hidderYYM()">x</div>
+                  </div>
+                </div>
+              </div>
+
+         <!--ZMM-->
+            <div id="div1">
+             <a type="button" onclick="dianwoZMM()">
+              <img src="img/ZMM.PNG" width="190"
+                    style="position: absolute;
+                         top:400px;
+                         left: 755px;">
+              </a>
+            </div>
+              <div class="zhezhaoZMM" id='zhezhaoZMM'>
+                <div class="tankuang">
+                  <div id="header">
+                    <span><img src="img/IDZMM.PNG" width="705px" ></span>
+                    <div id="header-right" onclick="hidderZMM()">x</div>
+                  </div>
+                </div>
+              </div>
+
+              <!--WZ-->
+                 <div id="div1">
+                  <a type="button" onclick="dianwoWZ()">
+                   <img src="img/WZ.PNG" width="210"
+                         style="position: absolute;
+                              top:400px;
+                              left: 535px;">
+                   </a>
+                 </div>
+                   <div class="zhezhaoWZ" id='zhezhaoWZ'>
+                     <div class="tankuang">
+                       <div id="header">
+                         <span><img src="img/IDWZ.PNG" width="705px" ></span>
+                         <div id="header-right" onclick="hidderWZ()">x</div>
+                       </div>
+                     </div>
+                   </div>
+
+                   <!--ZYR-->
+                      <div id="div1">
+                       <a type="button" onclick="dianwoZYR()">
+                        <img src="img/ZYR.PNG" width="250"
+                              style="position: absolute;
+                                   top:440px;
+                                   left: 615px;">
+                        </a>
+                      </div>
+                        <div class="zhezhaoZYR" id='zhezhaoZYR'>
+                          <div class="tankuang">
+                            <div id="header">
+                              <span><img src="img/IDZYR.PNG" width="705px" ></span>
+                              <div id="header-right" onclick="hidderZYR()">x</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!--YSY-->
+                             <div id="div1">
+                              <a type="button" onclick="dianwoYSY()">
+                               <img src="img/YSY.PNG" width="125"
+                                     style="position: absolute;
+                                          top:450px;
+                                          left: 460px;">
+                               </a>
+                             </div>
+                               <div class="zhezhaoYSY" id='zhezhaoYSY'>
+                                 <div class="tankuang">
+                                   <div id="header">
+                                     <span><img src="img/IDYSY.PNG" width="705px" ></span>
+                                     <div id="header-right" onclick="hidderYSY()">x</div>
+                                   </div>
+                                 </div>
+                               </div>
+
+                      <!--TYR-->
+                           <div id="div1">
+                            <a type="button" onclick="dianwoTYR()">
+                             <img src="img/TYR.PNG" width="225"
+                                   style="position: absolute;
+                                        top:540px;
+                                        left: 560px;">
+                             </a>
+                           </div>
+                             <div class="zhezhaoTYR" id='zhezhaoTYR'>
+                               <div class="tankuang">
+                                 <div id="header">
+                                   <span><img src="img/IDTYR.PNG" width="705px" ></span>
+                                   <div id="header-right" onclick="hidderTYR()">x</div>
+                                 </div>
+                               </div>
+                             </div>
+
+                             <!--ZMY-->
+                                  <div id="div1">
+                                   <a type="button" onclick="dianwoZMY()">
+                                    <img src="img/ZMY.PNG" width="160"
+                                          style="position: absolute;
+                                               top:510px;
+                                               left: 775px;">
+                                    </a>
+                                  </div>
+                                    <div class="zhezhaoZMY" id='zhezhaoZMY'>
+                                      <div class="tankuang">
+                                        <div id="header">
+                                          <span><img src="img/IDZMY.PNG" width="705px" ></span>
+                                          <div id="header-right" onclick="hidderZMY()">x</div>
+                                        </div>
+                                      </div>
+                                    </div>
+</div>
+
+    <script type="text/javascript" src="All1.js">
+
+
+    </script>
+
+
+      </body>
+    </html>
